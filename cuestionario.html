@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ado</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style2.css" />
+  <link rel="stylesheet" href="style3.css" />
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="img/logobotica.png" alt="Logo" class="logo" />
+    </div>
+
+    <div class="menu-container">
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="hamburguesa">
+        <div class="barra"></div>
+        <div class="barra"></div>
+        <div class="barra"></div>
+      </label>
+
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="personajes.html">Personajes</a></li>
+          <li><a href="estudio.html">Estudio</a></li>
+          <li><a href="cuestionario.html">Consultas</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+ <main>
+    <section id="consultas" class="consultas-section">
+      <h1>Información de contacto</h1>
+
+      <form action="confirmacion.html" method="get" novalidate>
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required minlength="2" maxlength="50" />
+        </div>
+
+        <div class="form-group">
+          <label for="apellido">Apellido:</label>
+          <input type="text" id="apellido" name="apellido" required minlength="2" maxlength="50" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required minlength="10" maxlength="500" placeholder="Escribe tu mensaje aquí..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-enviar">Enviar</button>
+      </form>
+    </section>
+  </main>
+<footer>
+  <h3>Donde podes ver los diarios de la Boticaria</h3>
+  <ul>
+    <li>
+      <a href="https://www.crunchyroll.com" target="_blank">
+        <img src="img/logocrunchy.png" alt="Crunchyroll" width="60" />
+      </a>
+    </li>
+    <li>
+      <a href="https://www.netflix.com" target="_blank">
+        <img src="img/logonetflix.png" alt="Netflix" width="60" />
+      </a>
+    </li>
+  </ul>
+</footer>
+</html>
